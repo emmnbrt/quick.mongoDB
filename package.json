@@ -1,0 +1,58 @@
+{
+  "name": "quick.mongodb",
+  "version": "1.0.1",
+  "description": "Quick mongodb wrapper for beginners.",
+  "main": "index.js",
+  "types": "typings/index.d.ts",
+  "exports": {
+    ".": [
+      {
+        "require": "./index.js",
+        "import": "./esm/index.mjs"
+      },
+      "./index.js"
+    ],
+    "./esm": "./esm/index.mjs"
+  },
+  "scripts": {
+    "docs": "docgen --source src --custom docs/index.yml --output docs/docs.json",
+    "docs:test": "docgen --source src --custom docs/index.yml",
+    "test": "cd test && node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "spikie",
+  "license": "MIT",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "funding": "",
+  "keywords": [
+    "db",
+    "quickmongo",
+    "quick.mongo",
+    "mongodb",
+    "mongoose",
+    "quick.db",
+    "enmap",
+    "josh",
+    "keyv",
+    "mongo",
+    "easy-mongodb",
+    "endb"
+  ],
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "mongoose": "5.12.15"
+  },
+  "devDependencies": {
+    "discord.js-docgen": "github:discordjs/docgen"
+  },
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  }
+}
